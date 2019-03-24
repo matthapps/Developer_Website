@@ -6,11 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Learn With Us</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 
 <body>
+
+    <!-- Start Modal Box -->
+    <input type="checkbox" name="" id="registration" style="display: none">
+    <form action="index.html" id="register">
+        <label for="registration" id="close">&times;</label>
+        <label for="username">Username</label>
+        <input type="text" placeholder="Your Name" name="" id="">
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="Your Email">
+        <label for="login">Login Name:</label>
+        <input type="text" placeholder="Choose a Login Name">
+        <label for="password">Password:</label>
+        <input type="password" placeholder="Choose a Password">
+        <label for="password">Confirm Password</label>
+        <input type="password" placeholder="Confirm Your Password">
+        <input type="submit" value="Register">
+    </form>
+
+    <input type="checkbox" name="" id="login" style="display: none">
+    <form action="index.html" id="sign-in">
+        <label for="login" id="close">&times;</label>
+        <label for="email">E-mail Address</label>
+        <input type="email" placeholder="Your E-mail">
+        <label for="password">Password:</label>
+        <input type="password" placeholder="Your Password">
+        <input type="submit" value="Login">
+    </form>
+    <!-- End Modal Box -->
+
     <!-- Start Main Wrapper -->
     <div class="main-wrapper">
         <!-- Start Navigation -->
@@ -33,8 +63,8 @@
             </ul>
 
             <ul class="nav2">
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Registration</a></li>
+                <li><a href="#"><label for="login">Login</label></a></li>
+                <li><a href="#"><label for="registration">Registration</label></a></li>
             </ul>
         </nav>
         <!-- End Navigation -->
@@ -133,6 +163,15 @@
         </section>
         <!-- End Developer Section -->
 
+        <!-- Start Social Media Section -->
+        <section class="social-icons">
+            <ul>
+                <li><a href="#"><i class="fab fa-google-plus-g"><span>Google+</span></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"><span>Facebook</span></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"><span>Twitter</span></i></a></li>
+            </ul>
+        </section>
+        <!-- End Social Media Section -->
         <footer>
             <p>
                 Copyright &copy; 2019 MH Soft, All Rights Reserved
